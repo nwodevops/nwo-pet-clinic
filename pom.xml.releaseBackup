@@ -62,7 +62,7 @@
     </build>
 
     <scm>
-        <developerConnection>smc:git:git@github.com:nwodevops/nwo-pet-clinic.git</developerConnection>
+        <developerConnection>scm:git:git@github.com:nwodevops/nwo-pet-clinic.git</developerConnection>
     </scm>
 
 </project>
