@@ -1,4 +1,4 @@
-package com.nwo.nwopetclinic;
+package nwopetclinic;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

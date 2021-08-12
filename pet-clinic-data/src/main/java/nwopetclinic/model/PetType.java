@@ -1,4 +1,4 @@
-package com.nwo.nwopetclinic.model;
+package nwopetclinic.model;
 
 import lombok.Data;
 
