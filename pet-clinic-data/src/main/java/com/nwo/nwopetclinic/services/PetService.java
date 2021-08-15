@@ -4,7 +4,7 @@ import java.util.Set;
 
 import com.nwo.nwopetclinic.model.Pet;
 
-public interface PetService {
+public interface PetService extends CrudService<Pet, Long> {
 
   Pet findById(Long id);
   Pet seave(Pet owner);
