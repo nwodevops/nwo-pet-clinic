@@ -40,11 +40,7 @@ public class OwnerServiceMap
   
 
 
-  @Override
-  public Owner save(Long id, Owner object) {
-    
-    return super.save(id, object);
-  }
+
 
   @Override
   public Owner findByLastName(String lastName) {

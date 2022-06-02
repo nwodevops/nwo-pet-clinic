@@ -1,8 +1,10 @@
 package com.nwo.nwopetclinic.model;
 
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
-@Data
+@Setter @Getter
 public class Person extends BaseEntity {
 
     private String firstName;
