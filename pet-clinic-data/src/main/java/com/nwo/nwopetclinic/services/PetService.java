@@ -7,7 +7,7 @@ import com.nwo.nwopetclinic.model.Pet;
 public interface PetService extends CrudService<Pet, Long> {
 
   Pet findById(Long id);
-  Pet seave(Pet owner);
+  Pet save(Pet owner);
   Set <Pet> findAll();
   
 }

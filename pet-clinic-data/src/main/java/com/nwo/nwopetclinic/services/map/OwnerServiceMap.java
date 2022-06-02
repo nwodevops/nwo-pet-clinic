@@ -4,9 +4,14 @@ import java.util.Set;
 
 import com.nwo.nwopetclinic.model.Owner;
 import com.nwo.nwopetclinic.services.CrudService;
+import com.nwo.nwopetclinic.services.OwnerService;
 
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Service;
+
+@Service
 public class OwnerServiceMap 
-  extends AbstractMapService<Owner, Long> implements CrudService<Owner, Long> {
+  extends AbstractMapService<Owner, Long> implements OwnerService {
     
   @Override
   public Set<Owner> findAll() {  
@@ -35,11 +40,17 @@ public class OwnerServiceMap
   
 
 
-  // @Override
-  // public Owner save(Long id, Owner object) {
+  @Override
+  public Owner save(Long id, Owner object) {
     
-  //   return super.save(id, object);
-  // }
+    return super.save(id, object);
+  }
+
+  @Override
+  public Owner findByLastName(String lastName) {
+    // TODO Auto-generated method stub
+    return null;
+  }
 
 
 

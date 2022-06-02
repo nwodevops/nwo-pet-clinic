@@ -4,9 +4,13 @@ import java.util.Set;
 
 import com.nwo.nwopetclinic.model.Pet;
 import com.nwo.nwopetclinic.services.CrudService;
+import com.nwo.nwopetclinic.services.PetService;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class PetServiceMap 
-  extends AbstractMapService<Pet, Long> implements CrudService<Pet, Long>  {
+  extends AbstractMapService<Pet, Long> implements PetService  {
 
   @Override
   public void delete(Pet object) {
@@ -32,5 +36,5 @@ public class PetServiceMap
   public Pet save(Pet object) {
     return super.save(object.getId(), object);
   }
-  
+
 }

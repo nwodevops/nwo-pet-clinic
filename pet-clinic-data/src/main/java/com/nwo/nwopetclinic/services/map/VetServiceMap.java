@@ -4,9 +4,12 @@ import java.util.Set;
 
 import com.nwo.nwopetclinic.model.Vet;
 import com.nwo.nwopetclinic.services.CrudService;
+import com.nwo.nwopetclinic.services.VetService;
 
+import org.springframework.stereotype.Service;
+@Service
 public class VetServiceMap
-  extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long> {
+  extends AbstractMapService<Vet, Long> implements VetService {
 
   @Override
   public void delete(Vet object) {
