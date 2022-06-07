@@ -5,10 +5,11 @@ import lombok.Data;
 import java.time.LocalDate;
 
 import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
-
+@Entity
 @Data
 @Table(name = "pets")
 public class Pet extends BaseEntity{
