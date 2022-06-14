@@ -8,7 +8,7 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>pet-clinic-data</artifactId>
+    <artifactId>pet-clinic-data</artifactId> 
 
     <properties>
         <spring-boot.repackage.skip>true</spring-boot.repackage.skip>
@@ -16,6 +16,14 @@
 
 
     <dependencies>
+
+        
+
+
+        
+
+        
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -38,14 +46,46 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
+            <!-- <scope>test</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>junit</groupId>
+                    <artifactId>junit</artifactId>
+                </exclusion>
+            </exclusions> -->
+        </dependency>
+        <!-- <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
             <scope>test</scope>
         </dependency>
+
+
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <scope>test</scope>
+        </dependency> -->
+        
     </dependencies>
 
 
 
     <build>
         <plugins>
+            <!-- <plugin>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.22.0</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.apache.maven.surefire</groupId>
+                        <artifactId>surefire-junit-platform</artifactId>
+                        <version>3.0.0-M7</version>
+                    </dependency>
+                </dependencies>
+            </plugin> 
+            -->
+
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>

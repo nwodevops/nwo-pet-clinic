@@ -8,8 +8,10 @@ import com.nwo.nwopetclinic.services.CrudService;
 import com.nwo.nwopetclinic.services.SpecialtyService;
 import com.nwo.nwopetclinic.services.VetService;
 
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 @Service
+@Profile({"default", "map"})
 public class VetServiceMap
   extends AbstractMapService<Vet, Long> implements VetService {
 

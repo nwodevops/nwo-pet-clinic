@@ -4,15 +4,15 @@ import java.util.Set;
 
 import com.nwo.nwopetclinic.model.Owner;
 import com.nwo.nwopetclinic.model.Pet;
-import com.nwo.nwopetclinic.services.CrudService;
 import com.nwo.nwopetclinic.services.OwnerService;
 import com.nwo.nwopetclinic.services.PetService;
 import com.nwo.nwopetclinic.services.PetTypeService;
 
-import org.springframework.context.annotation.Primary;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 @Service
+@Profile({"default", "map"})
 public class OwnerServiceMap
     extends AbstractMapService<Owner, Long> implements OwnerService {
 
@@ -75,8 +75,11 @@ public class OwnerServiceMap
 
   @Override
   public Owner findByLastName(String lastName) {
-    // TODO Auto-generated method stub
-    return null;
+    return this.findAll()
+                .stream()
+                .filter(owner -> owner.getLastName().equalsIgnoreCase(lastName))
+                .findFirst()
+                .orElse(null);
   }
 
 }
