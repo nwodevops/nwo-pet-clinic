@@ -5,6 +5,6 @@ import org.springframework.data.repository.CrudRepository;
 
 import com.nwo.nwopetclinic.model.Owner;
 
-public interface OwnerRepository extends JpaRepository<Owner, Long> {
+public interface OwnerRepository extends CrudRepository<Owner, Long> {
   Owner findByLastName(String lastName);
 }
