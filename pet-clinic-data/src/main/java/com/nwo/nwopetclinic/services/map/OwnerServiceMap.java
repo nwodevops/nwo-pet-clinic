@@ -1,5 +1,6 @@
 package com.nwo.nwopetclinic.services.map;
 
+import java.util.List;
 import java.util.Set;
 
 import com.nwo.nwopetclinic.model.Owner;
@@ -81,5 +82,12 @@ public class OwnerServiceMap
                 .findFirst()
                 .orElse(null);
   }
+
+  @Override
+    public List<Owner> findAllByLastNameLike(String lastName) {
+
+        //todo - impl
+        return null;
+    }
 
 }
